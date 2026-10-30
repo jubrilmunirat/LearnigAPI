@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: dark;
+    font-family: 'Manrope';
+    font-weight: 800;
+    background-color: hsl(218, 23%, 16%);
+    color: hsl(193, 38%, 86%);
+
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    padding: 32px 16px 56px;
+}
+
+.advice-card {
+    position: relative;
+    width: min(100%, 540px);
+    min-height: 315px;
+    padding: 48px 48px 68px;
+    border-radius: 15px;
+    background-color: hsl(217, 19%, 38%);
+    text-align: center;
+}
+
+.advice-label {
+    margin-bottom: 24px;
+    color: hsl(150, 100%, 66%);
+    font-size: 11px;
+    letter-spacing: 4px;
+
+}
+
+.advice-text {
+    min-height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 28px;
+    font-size: 28px;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+}
+
+.divider {
+    display: block;
+    width: 100%;
+    line-height: 0;
+}
+
+.divider img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.dice-button {
+    position: absolute;
+    left: 50%;
+    bottom: -32px;
+    width: 64px;
+    height: 64px;
+    display: grid;
+    place-items: center;
+    border: 0;
+    border-radius:
+        50%;
+    background-color: hsl(150, 100%, 66%);
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+
+.dice-button img {
+    width: 24px;
+    height: 24px;
+}
